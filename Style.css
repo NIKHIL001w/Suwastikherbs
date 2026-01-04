@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0a1f44, #1f46f5ce);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 90px;
+    gap: 40px;
+}
+
+/* LEFT */
+.content {
+    max-width: 540px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+h1 span {
+    color: #ff8c2f;
+}
+
+h1 strong {
+    color: #ffb76b;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    opacity: 0.95;
+}
+
+.features {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+    font-size: 14px;
+}
+
+/* CTA */
+.cta {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff7a18, #ffb347);
+    padding: 16px 32px;
+    font-size: 16px;
+    color: #000;
+    border-radius: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.4);
+}
+
+/* RIGHT IMAGE */
+.image-box {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 26px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.45);
+}
+
+/* STATS */
+.stat {
+    position: absolute;
+    background: #ffffff;
+    color: #0a1f44;
+    padding: 14px 18px;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.stat small {
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.stat.top {
+    top: 30px;
+    right: -30px;
+}
+
+.stat.bottom {
+    bottom: 30px;
+    left: -30px;
+}
+
+/* LAPTOP */
+@media (max-width: 1200px) {
+    .image-box img {
+        max-width: 460px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .features {
+        justify-content: center;
+    }
+
+    .image-box {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .image-box img {
+        max-width: 420px;
+        margin-top: 40px;
+    }
+
+    .stat {
+        display: none;
+    }
+}
